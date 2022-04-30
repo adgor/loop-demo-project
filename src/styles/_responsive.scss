@@ -1,0 +1,40 @@
+$xl-screen-size: 1400px;
+$lg-screen-size: 1170px;
+$md-screen-size: 992px;
+$sm-screen-size: 767px;
+$xs-screen-size: 575px;
+
+//Xtra Large Screen - 1170 to 1400 screen size
+@mixin xl-screen {
+  @media screen and (min-width: $xl-screen-size) {
+    @content;
+  }
+}
+
+//Large Screen - 993 to 1170 screen size
+@mixin lg-screen {
+  @media screen and (min-width: $lg-screen-size) {
+    @content;
+  }
+}
+
+//Medium Screen - 768 to 992 screen size
+@mixin md-screen {
+  @media screen and (min-width: $md-screen-size) {
+    @content;
+  }
+}
+
+//Medium Screen - 575 to 767 screen size
+@mixin sm-screen {
+  @media screen and (min-width: $sm-screen-size) {
+    @content;
+  }
+}
+
+//Medium Screen - below 575 screen size
+@mixin xs-screen {
+  @media screen and (min-width: $xs-screen-size) {
+    @content;
+  }
+}
